@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7BACE62C68A3E700850874 /* Stop_Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7BACE52C68A3E700850874 /* Stop_Watch.swift */; };
 		6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */; };
 		6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */; };
 		6ECD0DFC2C66CEB200B7EC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E7BACE52C68A3E700850874 /* Stop_Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop_Watch.swift; sourceTree = "<group>"; };
 		6ECD0DF42C66CEB000B7EC08 /* Live Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Metronome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_MetronomeApp.swift; sourceTree = "<group>"; };
 		6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */,
 				6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */,
 				6ECD0DFD2C66CEB200B7EC08 /* Preview Content */,
+				6E7BACE52C68A3E700850874 /* Stop_Watch.swift */,
 			);
 			path = "Live Metronome";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7BACE62C68A3E700850874 /* Stop_Watch.swift in Sources */,
 				6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */,
 				6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */,
 			);
