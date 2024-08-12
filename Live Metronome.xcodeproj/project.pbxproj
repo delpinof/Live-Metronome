@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E7BACE62C68A3E700850874 /* Stop_Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7BACE52C68A3E700850874 /* Stop_Watch.swift */; };
+		6E088EB52C6A8B58008C61C5 /* BPMConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E088EB42C6A8B58008C61C5 /* BPMConverterTest.swift */; };
 		6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */; };
 		6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */; };
 		6ECD0DFC2C66CEB200B7EC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */; };
 		6ECD0DFF2C66CEB200B7EC08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD0DFE2C66CEB200B7EC08 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6E088EAF2C6A8AFA008C61C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6ECD0DEC2C66CEB000B7EC08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ECD0DF32C66CEB000B7EC08;
+			remoteInfo = "Live Metronome";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		6E7BACE52C68A3E700850874 /* Stop_Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop_Watch.swift; sourceTree = "<group>"; };
+		6E088EAB2C6A8AFA008C61C5 /* LiveMetronomeTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveMetronomeTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E088EB42C6A8B58008C61C5 /* BPMConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMConverterTest.swift; sourceTree = "<group>"; };
 		6ECD0DF42C66CEB000B7EC08 /* Live Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Metronome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_MetronomeApp.swift; sourceTree = "<group>"; };
 		6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E088EA82C6A8AFA008C61C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ECD0DF12C66CEB000B7EC08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E088EAC2C6A8AFA008C61C5 /* LiveMetronomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				6E088EB42C6A8B58008C61C5 /* BPMConverterTest.swift */,
+			);
+			path = LiveMetronomeTest;
+			sourceTree = "<group>";
+		};
 		6ECD0DEB2C66CEB000B7EC08 = {
 			isa = PBXGroup;
 			children = (
 				6ECD0DF62C66CEB000B7EC08 /* Live Metronome */,
+				6E088EAC2C6A8AFA008C61C5 /* LiveMetronomeTest */,
 				6ECD0DF52C66CEB000B7EC08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				6ECD0DF42C66CEB000B7EC08 /* Live Metronome.app */,
+				6E088EAB2C6A8AFA008C61C5 /* LiveMetronomeTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +85,6 @@
 				6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */,
 				6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */,
 				6ECD0DFD2C66CEB200B7EC08 /* Preview Content */,
-				6E7BACE52C68A3E700850874 /* Stop_Watch.swift */,
 			);
 			path = "Live Metronome";
 			sourceTree = "<group>";
@@ -73,6 +100,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6E088EAA2C6A8AFA008C61C5 /* LiveMetronomeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E088EB12C6A8AFA008C61C5 /* Build configuration list for PBXNativeTarget "LiveMetronomeTest" */;
+			buildPhases = (
+				6E088EA72C6A8AFA008C61C5 /* Sources */,
+				6E088EA82C6A8AFA008C61C5 /* Frameworks */,
+				6E088EA92C6A8AFA008C61C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E088EB02C6A8AFA008C61C5 /* PBXTargetDependency */,
+			);
+			name = LiveMetronomeTest;
+			productName = LiveMetronomeTest;
+			productReference = 6E088EAB2C6A8AFA008C61C5 /* LiveMetronomeTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6ECD0DF32C66CEB000B7EC08 /* Live Metronome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ECD0E022C66CEB200B7EC08 /* Build configuration list for PBXNativeTarget "Live Metronome" */;
@@ -100,6 +145,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					6E088EAA2C6A8AFA008C61C5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 6ECD0DF32C66CEB000B7EC08;
+					};
 					6ECD0DF32C66CEB000B7EC08 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -119,11 +168,19 @@
 			projectRoot = "";
 			targets = (
 				6ECD0DF32C66CEB000B7EC08 /* Live Metronome */,
+				6E088EAA2C6A8AFA008C61C5 /* LiveMetronomeTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E088EA92C6A8AFA008C61C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ECD0DF22C66CEB000B7EC08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,11 +193,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E088EA72C6A8AFA008C61C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E088EB52C6A8B58008C61C5 /* BPMConverterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6ECD0DF02C66CEB000B7EC08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7BACE62C68A3E700850874 /* Stop_Watch.swift in Sources */,
 				6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */,
 				6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */,
 			);
@@ -148,7 +212,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6E088EB02C6A8AFA008C61C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ECD0DF32C66CEB000B7EC08 /* Live Metronome */;
+			targetProxy = 6E088EAF2C6A8AFA008C61C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6E088EB22C6A8AFA008C61C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DG389Q43HW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fherdelpino.LiveMetronomeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Live Metronome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Live Metronome";
+			};
+			name = Debug;
+		};
+		6E088EB32C6A8AFA008C61C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DG389Q43HW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fherdelpino.LiveMetronomeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Live Metronome.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Live Metronome";
+			};
+			name = Release;
+		};
 		6ECD0E002C66CEB200B7EC08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -279,6 +387,8 @@
 				DEVELOPMENT_TEAM = DG389Q43HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Live Metronome";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +418,8 @@
 				DEVELOPMENT_TEAM = DG389Q43HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Live Metronome";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E088EB12C6A8AFA008C61C5 /* Build configuration list for PBXNativeTarget "LiveMetronomeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E088EB22C6A8AFA008C61C5 /* Debug */,
+				6E088EB32C6A8AFA008C61C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6ECD0DEF2C66CEB000B7EC08 /* Build configuration list for PBXProject "Live Metronome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
