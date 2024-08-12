@@ -10,43 +10,41 @@ import SwiftUI
 struct ContentView: View {
     @State private var backgroundColor: Color = .white
     @State private var time = ProcessInfo.processInfo.systemUptime
-    @State private var bpm = 0
-    @State private var diff = 0.0
+    @State private var bpm = 120
     @State private var flag: Bool = false
-    @State private var scale: CGFloat = 1.0
     @State private var optionalTimer: Timer?
-    
+    @FocusState private var textFieldFocused: Bool
     
     var body: some View {
         
         VStack {
-            Text("BPM \(bpm)")
+            
+            HStack{
+                Text("BPM")
+                TextField("", value: $bpm, format: .number)
+                    .keyboardType(.numberPad)
+                    .focused($textFieldFocused)
+            }
             .font(.largeTitle)
-            /*Circle()
-            .fill(Color.red)
-            .frame(width: 100, height: 100)
-            .scaleEffect(scale)
-            .animation(Animation.easeInOut(duration: diff).repeatForever(autoreverses: true))
-            .onAppear {
-                startPulsating()
-            }*/
             
             Button("Tap") {
                 let tmp = ProcessInfo.processInfo.systemUptime
-                diff = tmp-time
-                bpm = Int(60/diff)
+                bpm = BpmConverter.getBpm(from: tmp-time)
                 time = tmp
+                textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
             .tint(.green)
             
             Button("Start") {
+                let interval = BpmConverter.getInterval(from: bpm)
                 if let timer = optionalTimer {
                     timer.invalidate()
                 }
-                optionalTimer = Timer.scheduledTimer(withTimeInterval: diff, repeats: true) { _ in
+                optionalTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { _ in
                     timerJob()
                 }
+                textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
             .tint(.green)
@@ -56,6 +54,7 @@ struct ContentView: View {
                     timer.invalidate()
                 }
                 backgroundColor = .white
+                textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
             .tint(.green)
@@ -77,12 +76,7 @@ struct ContentView: View {
         }
     }
     
-    func startPulsating() {
-        withAnimation {
-            scale = 1.5
-        }
-    }
-}
+} // end ContentView
 
 #Preview {
     ContentView()

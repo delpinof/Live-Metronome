@@ -14,6 +14,6 @@ class BpmConverter {
     }
     
     static func getInterval(from bpm:Int) -> Double {
-        Double(1/60/bpm)
+        Double(60)/Double(bpm)
     }
 }
