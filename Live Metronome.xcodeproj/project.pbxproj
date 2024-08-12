@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E088EB52C6A8B58008C61C5 /* BPMConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E088EB42C6A8B58008C61C5 /* BPMConverterTest.swift */; };
+		6E6511E82C6A9AAE00ED6B70 /* BpmConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6511E72C6A9AAE00ED6B70 /* BpmConverter.swift */; };
 		6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */; };
 		6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */; };
 		6ECD0DFC2C66CEB200B7EC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		6E088EAB2C6A8AFA008C61C5 /* LiveMetronomeTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveMetronomeTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E088EB42C6A8B58008C61C5 /* BPMConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMConverterTest.swift; sourceTree = "<group>"; };
+		6E6511E72C6A9AAE00ED6B70 /* BpmConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpmConverter.swift; sourceTree = "<group>"; };
 		6ECD0DF42C66CEB000B7EC08 /* Live Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Live Metronome.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live_MetronomeApp.swift; sourceTree = "<group>"; };
 		6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		6ECD0DF62C66CEB000B7EC08 /* Live Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				6E6511E72C6A9AAE00ED6B70 /* BpmConverter.swift */,
 				6ECD0DF72C66CEB000B7EC08 /* Live_MetronomeApp.swift */,
 				6ECD0DF92C66CEB000B7EC08 /* ContentView.swift */,
 				6ECD0DFB2C66CEB200B7EC08 /* Assets.xcassets */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ECD0DFA2C66CEB000B7EC08 /* ContentView.swift in Sources */,
+				6E6511E82C6A9AAE00ED6B70 /* BpmConverter.swift in Sources */,
 				6ECD0DF82C66CEB000B7EC08 /* Live_MetronomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
