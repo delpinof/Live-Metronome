@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let buttonColor: Color = .blue
     @State private var backgroundColor: Color = .white
     @State private var time = ProcessInfo.processInfo.systemUptime
     @State private var bpm = 120
@@ -34,7 +35,7 @@ struct ContentView: View {
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(.green)
+            .tint(buttonColor)
             
             Button("Start") {
                 let interval = BpmConverter.getInterval(from: bpm)
@@ -47,7 +48,7 @@ struct ContentView: View {
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(.green)
+            .tint(buttonColor)
             
             Button("Stop") {
                 if let timer = optionalTimer {
@@ -57,7 +58,7 @@ struct ContentView: View {
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(.green)
+            .tint(buttonColor)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
