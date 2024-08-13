@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let buttonColor: Color = .blue
-    @State private var backgroundColor: Color = .white
+    private let BUTTON_COLOR: Color = .green
+    private let BACKGROUND_COLOR: Color = .black
+    @State private var backgroundColor: Color = .black
     @State private var time = ProcessInfo.processInfo.systemUptime
     @State private var bpm = 120
     @State private var flag: Bool = false
@@ -20,13 +21,15 @@ struct ContentView: View {
         
         VStack {
             
-            HStack{
+            VStack{
                 Text("BPM")
                 TextField("", value: $bpm, format: .number)
                     .keyboardType(.numberPad)
                     .focused($textFieldFocused)
             }
             .font(.largeTitle)
+            .multilineTextAlignment(.center)
+            .foregroundColor(BUTTON_COLOR)
             
             Button("Tap") {
                 let tmp = ProcessInfo.processInfo.systemUptime
@@ -35,7 +38,7 @@ struct ContentView: View {
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(buttonColor)
+            .tint(BUTTON_COLOR)
             
             Button("Start") {
                 let interval = BpmConverter.getInterval(from: bpm)
@@ -48,17 +51,17 @@ struct ContentView: View {
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(buttonColor)
+            .tint(BUTTON_COLOR)
             
             Button("Stop") {
                 if let timer = optionalTimer {
                     timer.invalidate()
                 }
-                backgroundColor = .white
+                backgroundColor = BACKGROUND_COLOR
                 textFieldFocused = false
             }
             .buttonStyle(.borderedProminent)
-            .tint(buttonColor)
+            .tint(BUTTON_COLOR)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background {
@@ -69,10 +72,10 @@ struct ContentView: View {
     
     func timerJob() {
         if (flag) {
-            backgroundColor = .white
+            backgroundColor = BACKGROUND_COLOR
             flag = false
         } else{
-            backgroundColor = .red
+            backgroundColor = BUTTON_COLOR
             flag = true
         }
     }
